@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/bcf4c3c848.js" crossorigin="anonymous"></script>
+
+	<title>my personal CV</title>
+	<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+	<style>
+	* {box-sizing: border-box}
+
+	/* Set height of body and the document to 100% */
+	body, html {
+		height: 100%;
+		margin: 0;
+		background-color: black;
+		-ms-overflow-style: none;   IE and Edge 
+  		scrollbar-width: none;  /* Firefox */
+}
+	body::-webkit-scrollbar {
+    	display: none;
+}
+	@font-face {
+	  font-family: BMitra;
+	  src: url('BMitra.eot');
+	  src: url('BMitra.eot?#iefix')
+		format('BMitra-opentype'),	
+		url('BMitra.woff') format('woff'),
+        url('BMitra.ttf') format('truetype');
+  		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+	  font-family: BTitrBd;
+	  src: url('BTitrBd.eot');
+	  src: url('BTitrBd.eot?#iefix')
+		format('BTitrBd-opentype'),	
+		url('BTitrBd.woff') format('woff'),
+        url('BTitrBd.ttf') format('truetype');
+  		font-weight: bold;
+		font-style: normal;
+	}
+	/* Style tab links */
+	.tablink {
+		transition: 1s;
+		background-color: #2b2b2b;
+		font-family: 'BTitrBd';
+		color: white;
+		float: left;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		font-size: 17px;
+		width: 25%;
+	}
+
+	.tablink:hover {
+		font-family: 'BTitrBd';
+		font-size: 17px;
+		transition: 2s;
+		background-color:#5c5c5c ;
+		border-left: solid 5px white;
+		border-right: solid 5px white;
+		color: white;
+	}
+
+	/* Style the tab content (and add height:100% for full page content) */
+	.tabcontent {
+		transition:2s;
+		color: whitesmoke;
+		font-family: 'BMitra';
+		display: none;
+		padding: 100px 20px;
+		height: 800px;
+	}
+	#bigimage{
+		padding-top: 100px;
+		height: 759px;
+		text-align: center;
+		background-image: url('IMG_17961.JPG');
+		background-size: 100%;
+		background-position: center;
+	}
+	#infopar{
+		position: absolute;
+		top: 905px;
+		right: 20px;
+		direction: rtl;
+		margin-right: 350px;
+		font-size: 25px;
+	}
+	#infoTab{
+		font-weight: bolder;
+		position: absolute;
+		top: 850px;
+		right: 10px;
+		margin-right: 350px;
+		direction: rtl;
+		font-size: 30px;
+		line-height: 8px;
+	}
+	p{
+		direction: rtl;
+		font-size: 25px;
+	}
+	h3{
+		font-weight: bolder;
+		direction: rtl;
+		font-size: 30px;
+		line-height: 8px;
+	}
+	h1{
+		border: double 5px white;
+		line-height: 5px;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		font-family: 'BTitrBd';
+		mix-blend-mode: multiply;
+		background-color: #2b2b2b;
+		color: white;
+		padding: 10px 10px 10px 10px;
+		height: 85%;
+		float: right;
+		opacity: 200%;
+		font-size: 30px;
+		
+	}
+	.footer{
+		transition-duration: 1s;
+		/*border-top: solid 5px grey;
+		border-bottom: solid 5px grey;*/
+		padding: 10px;
+		background-color: #000000;
+		width: 100%;
+		height: 250px;
+		text-align: center;
+		color: whitesmoke;
+	}
+	#mainphoto{
+		margin-top: -37px;
+		margin-right: -6px;
+		float: right;
+		height: 730px;
+		border-radius: 10px;
+		border: solid 0.5px #ff7885;
+	}
+	#footerList{
+		transition-duration: 2s;
+		background-color: #c6ff4a;
+		border-radius: 15px;
+		border-left: solid 5px #e9ffba;
+		color: black;
+		padding: 10px 40px;
+		padding-left: 30px;
+		font: ;
+		text-align: left;
+		float: left;
+		margin-top: 2px;
+		line-height: 40px;
+		font-size: 18px;
+		width: 100%;
+	}
+	#footerList:hover{
+		transition: 2s;
+		background-color: #dbff8f;
+		border-left-color: greenyellow;
+	}
+	
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+
+	#toTop{
+		transition: 0.5s;	
+		background-color: black;
+		opacity: 30%;
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+		border: solid 3px white;
+		color: white;
+		border-radius: 50%;
+		padding-right: 5px;
+	}
+
+	#toTop:hover{
+		transition: 0.5s;
+		opacity: 100%;
+		cursor: pointer;
+		border-color: black;
+		color: black;
+		background-color: white;
+	}
+	#sharifmark{
+		height: 200px;
+		border-radius: 10px;
+		margin-top: 10px;
+		margin-right: 2%;
+		float: right;
+	}
+	.container {
+	  position: relative;
+	  width: 100%;
+	  height: 20px;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  background: #fff;
+	  box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+	}
+	.Loading {
+	  position: relative;
+	  display: inline-block;
+	  height: 10px;
+	  border-radius: 4px;
+	  /*overflow: hidden*/;
+	}
+	ul#skillslist{
+		list-style-type: circle;
+		color: lightgreen;
+	}
+	.numberL{
+		text-align: center;
+		color: black;
+	}
+	h4{
+		font-family: AldotheApache;
+	}
+	.formcontainer{
+		background-image: url("Wallpaper (2).jpg");
+		background-position: center;
+		background-blend-mode: multiply;
+		background-color: #3b0704;
+		padding: 50px;
+		direction: rtl;
+		border-radius: 30px;
+	}
+	input[type=text],textarea{
+		width: 100%;
+		padding: 5px;
+		height: 40px;
+		direction: rtl;
+		font-family: BMitra;
+		font-size: 20px;
+		color: black;
+		border-radius: 5px;
+		margin: 5px;
+		border: none;
+	}
+	input[type=text]:focus{
+		transition: 2s;
+		background-color: lightgrey;
+		border: solid 1px black;
+	}
+	label{
+		font-family: BTitrbd;
+	}
+	#submit{
+		transition: 1s;
+		background-color: whitesmoke;
+		border: yellow;
+		font-size: 20px;
+		font-family: BMitra ;
+		border-radius: 5px;
+		height: 50px;
+		width: 150px;
+		margin-right: 10px;
+		margin-top: 5px;
+
+	}
+	#submit:hover{
+		transition: 1s;
+		color: white;
+		cursor: pointer;
+		background-color: black;
+		border: solid .5px whitesmoke;
+	}
+
+	#sendIcon{
+		font-size: 20px;
+		padding-left: 10px;
+	}
+
+	#Home {background-color: darkred;}
+	#News {background-color: darkgreen;
+			height: 925px;}
+	#Contact {background-color: darkblue;}
+	#About {background-color: darkorange; height: 1030px;}
+	.overlay {
+  		height: 100%;
+  		width: 0%;
+  		position: fixed;
+  		z-index: 1;
+	  	top: 0;
+	  	left: 0;
+	  	background-color: rgb(0,0,0);
+	  	background-color: rgba(0,0,0, 0.8);
+	  	overflow-x: hidden;
+	  	transition: 0.5s;
+	}
+
+	.overlay-content {
+		background-color: rgba(0,0,0, 0.9);
+		width: 100%;
+		margin: auto;
+		border-radius: 5%;
+		height: 190px;
+  		position: relative;
+  		top: 25%;
+  		text-align: center;
+  		margin-top: 30px;
+	}
+
+	.overlay button {
+	    padding: 8px;
+	    margin: 5px;
+	    border-radius: 15px;
+	    font-size: 36px;
+	  	color: black;
+	  	transition: 0.3s;
+	  	width: 100px;
+	  	cursor: pointer;
+	}
+	#yes{
+		transition: 1s;
+		color: green;
+		border: solid 1px green;
+	}
+	#yes:hover #yes:focus{
+		transition: 0.5s;
+		color: white;
+		background-color: green;
+		border-color: white;
+	}
+	#no{
+		transition: 1s;
+		border: solid 1px red;
+		color: red;
+	}
+	#no:hover #no:focus{
+		transition: 0.5s;
+		color: white;
+		background-color: red;
+		border-color: white;
+	}
+	.overlay .closebtn {
+  		position: absolute;
+  		top: 20px;
+  		right: 45px;
+  		font-size: 60px;
+
+	}
+	.closebtn{
+		color: white;
+	}
+	.notif{
+		z-index: 1;
+		transition: 1s;
+		position: fixed;
+		left: 30px;
+		bottom: -50px;
+		width: 50%;
+		height: 50px;
+		padding: 10px;
+		font-family: BTitrbd;
+		border-left: solid 10px green;
+		text-align: center;
+		background-color: white;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="notification" class="notif">
+		پیام شما ارسال شد
+	</div>
+	<div id="myNav" class="overlay">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<div class="overlay-content">
+   			 <h3 style="padding-top: 50px;color: white;">آیا مطمئن هستید از ارسال پیام ؟</h3>
+   				<button id="yes" onclick="yes()">بله</button>
+   				<button id="no" onclick="closeNav()">خیر</button>
+  </div>
+</div>
+	</div>
+	<div id="bigimage">
+		<h1 >رزومه شخصی  امیر حسین روان نخجوانی <i class='fas fa-chevron-circle-up' style='font-size:17px;color: white;padding: 10px;
+		border: double 0.3px white; border-radius: 2px; margin: 10px;'></i></h1>
+	</div>
+	
+	<div id="Navbar">
+		<button class="tablink" onclick="openPage('Home', this, 'darkred')" id="defaultOpen"><i class='fas fa-info' style='font-size:17px;color: white;padding: 5px;
+		border: solid 0.3px white; border-radius: 2px;'></i>     درباره من         </button>
+		<button class="tablink" onclick="openPage('News', this, 'darkgreen')"  ><i class='fas fa-brain' style='font-size:17px;color: white;padding: 5px;
+		border: solid 0.3px white; border-radius: 2px;'></i> مهارت ها</button>
+		<button class="tablink" onclick="openPage('Contact', this, 'darkblue')"><i class='fas fa-trophy' style='font-size:17px;color: white;padding: 5px;
+		border: solid 0.3px white; border-radius: 2px;'></i> افتخارات</button>
+		<button class="tablink" onclick="openPage('About', this, 'darkorange')" ><i class='fas fa-phone' style='font-size:17px;color: white;padding: 5px;
+		border: solid 0.3px white; border-radius: 2px;'></i> تماس با من</button>
+	</div>
+	<div id="Home" class="tabcontent">
+		<image src="1632411484002.jpg" alt="a photo of me" id="mainphoto"> </image>
+		<h3 id="infoTab">سوابق و اطلاعات من</h3>
+		<p id="infopar">متولد شهریور 1382 در تهران، داخل خانواده ای مذهبی هستم. تحصیلات دبستان را در مدرسه دولتی زنده یاد یحیی زاده گذراندم و تحصیلات دبیرستان دوره اول را نیز در دبیرستان مفید سپری کردم و حلقه اصلی دوستانم را آنجا تشکیل دادم . پس از آن در دوره دبیرستان دوره دوم به مدرسه مهر هشتم رفتم و تا دیپلم خود در آن مدرسه بودم تا یکی از بهترین دوران زندگیم را بگذرانم. در آزمون کنکور ریاضی (که رشته تحصیلی من بود) رتبه خوبی :) کسب کردم تا بتوانم در دانشگاه شریف در رشته مهندسی کامپیوتر ادامه تحصیل بدهم. پس در حالت کلی میتوان گفت خیلی شوخم و فیلم و سریال زیاد می بینم دربارشون یک عالمه تحلیل میکنم و هر چیزی که مربوط به موتور و موتور سواری باشه رو دوست دارم. در حال حاضر هم ترم یک دانشگاه شریف هستم و دست خیلی خیلی کوچکی در کارهای رسانه ای دارم.</p>
+	</div>
+	<div id="News" class="tabcontent">
+		<h3>مهارت ها</h3>
+		<p>اخیرا با توجه به رشته تحصیلی بیشتر پی علوم کامپیوتری هستم درحال توسعه برنامه نویسی سی هستم و مدتی قبل با پایتون مقداری کد زنی کرده ام در زمینه های فیلمسازی توانایی و کارهای گرافیکی  مانند اینفوگرافیک و تدوین عکس توانایی های لازم را دارم و مدتی در فیلم برداری و کارگردانی و عکاسی را تا حد معمولی پیش بردم و مدتی است که زبان انگلسی را تقویت میکنم همچنین در موضوعات ورزشی در زمینه ورزش هندبال توانایی خوبی دارم.</p>
+		<ul id="skillslist">
+			<li><h4 style="color: darkorange;">photoshop : 60%</h4></li>
+			<div class="container"><div class="Loading" style="width: 60%; background: darkorange;"> </div></div>
+			<li><h4 style="color: lightblue;">premiere pro : 50%</h4></li>
+			<div class="container"><div class="Loading" style="width: 50%; background: lightblue;"></div></div>
+			<li><h4 style="color: darkgoldenrod;">HTML CSS : 40%</h4></li>
+			<div class="container"><div class="Loading" style="width: 40%; background: darkgoldenrod;"></div></div>
+			<li><h4 style="color: darkcyan;"> C : 50%</h4></li>
+			<div class="container"><div class="Loading" style="width: 50%; background: darkcyan;"></div></div>
+			<li><h4 style="color: darksalmon;">Phython : 40%</h4></li>
+			<div class="container"><div class="Loading" style="width: 40%; background: darksalmon;"></div></div>
+			<li><h4 style="color: darkturquoise;">English : 75%</h4></li>
+			<div class="container"><div class="Loading" style="width: 75%; background: darkturquoise;"></div></div>
+			<li><h4 style="color: darkgrey;">photography : 65%</h4></li>
+			<div class="container"><div class="Loading" style="width: 65%; background: darkgrey;"></div></div>
+		</ul> 
+	</div>
+
+	<div id="Contact" class="tabcontent">
+		<h3>افتخارات</h3>
+		<p>حقیر رتبه 3 کشوری در مسابقات فیلمسازی پرسش مهر سال 96 را کسب کرده  و عضو بنیاد نخبگان کشوری هستم (که نتیجه رتبه کنکور است) ،تیم مدرسه سابق و بنده دارای مدال نقره منطقه ای در مسابقات هندبال هستیم.  </p>
+	</div>
+
+	<div id="About" class="tabcontent">
+		<h3>تماس با من</h3>
+		<p>من در دانشگاه شریف درس میخوانم پس اگر یک زمانی نزدیک آنجا بودید شاید توانستیم با هم یک لیوان قهوه بخوریم...
+اگر پیامی هم برای بنده دارید از طریق فرم زیر میتوانید ارسال نمایید.</p>
+	<div class="formcontainer">
+	  <form action="#">
+
+	    <label for="fname">نام  :</label>
+	    <input type="text" id="fname" name="firstname" placeholder="نام شما ...">
+
+	    <label for="lname">نام خانوادگی :</label>
+	    <input type="text" id="lname" name="lastname" placeholder="نام خانوادگی ...">
+
+	    <label for="E-mai" id="Email">ایمیل  :</label>
+	    <input type="text" id="E-mail" name="E-mail" placeholder="ایمیل ...">
+	    <label for="subject">پیام :</label>
+	    <textarea id="subject" name="subject" placeholder="هرچه دل تنگت میخواهد بگو ..." style="height:200px"></textarea>
+	  </form>
+	  <button id="submit"style="font-size:30px;cursor:pointer" onclick="approve()"><i class='fas fa-paper-plane' id="sendIcon"></i>ارسال</button>
+	</div>
+	
+
+	</div>
+	
+	
+
+	<div class="footer">
+		
+		<ul id="footerList">
+			<li> Telegram ID : <a href="https://t.me/Amir_H_rnn">@amir.h.rnn</a></li>
+			<li> Git hub ID : <a href="https://github.com/amirHravan">amirHravan</a></li>
+			<li>Stack Over Flow ID : <a href="https://stackoverflow.com/users/17470714/amir-h-rnn">amir-h-rnn</a></li>
+			<li>Phone Number : +989216750983</li>
+			<li>E-mail : <a href="mailto:amir.h.rnn@gmail.com">amir.h.rnn@gmail.com</a></li>
+		</ul>
+		<button id="toTop" onclick="scrollToTop()"><i class='fas fa-angle-double-up' style='font-size:50px;text-align:center; width: 50px; height: 50px;'></i></button>
+	</div>
+
+	<script>
+		function approve() {
+			document.getElementById("myNav").style.width="100%";
+		}
+		function closeNav() {
+			document.getElementById("myNav").style.width="0%";
+		}
+		function yes(){
+			closeNav();
+			document.getElementById("notification").style.bottom="30px";
+			setTimeout(() => {document.getElementById("notification").style.bottom="-50px" }, 5000);
+
+			
+
+		}
+
+		function openPage(pageName,elmnt,color) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].style.backgroundColor = "";
+			}
+			
+			document.getElementById(pageName).style.display = "block";
+			elmnt.style.backgroundColor = color;
+			elmnt.style.transition = '.8s';
+		}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+
+		function scrollToTop() {
+			var rootElement = document.documentElement
+			var scrollToTopBtn = document.getElementById("toTop")
+			// Scroll to top logic
+		  	rootElement.scrollTo({
+		    	top: 0,
+		    	behavior: "smooth"
+		  	})
+		  	scrollToTopBtn.addEventListener("click", scrollToTop)
+		}
+		
+
+
+</script>
+
+</body>
+</html> 
